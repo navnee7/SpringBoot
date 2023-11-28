@@ -70,7 +70,7 @@ Create an Amazon EKS cluster role using above json
 aws iam create-role --role-name myAmazonEKSClusterRole --assume-role-policy-document file://"eks-cluster-role-trust-policy.json"
 '''
 
-Attach amazon EKS managed policy named AmazonEKSClusterPolicy to the above role
+Attach amazon EKS managed policy named AmazonEKSClusterPolicy to the above roles
 
 '''
 aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy --role-name myAmazonEKSClusterRole
